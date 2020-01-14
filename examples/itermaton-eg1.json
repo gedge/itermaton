@@ -1,0 +1,44 @@
+{
+	"profile": "Tabbable",
+	"windows": [
+		{
+			"name": "w1",
+			"tabs": [
+				{
+					"name": "w1 t1",
+					"panes": [
+						{ "name": "w1t1 pane1", "cmd": "w1t1 p1" },
+						{ "name": "w1t1 pane2", "cmd": "w1t1 p2" },
+						{ "name": "w1t1 pane3", "cmd": "w1t1 p3" },
+						{ "name": "w1t1 pane4", "cmd": "w1t1 p4 newrow", "startsNextRow": true },
+						{ "name": "w1t1 pane5", "cmd": "w1t1 p5" }
+					]
+				},
+				{
+					"name": "w1 t2",
+					"panes": [
+						{ "name": "w1t2 pane1", "cmd": "w1t2 p1" },
+						{ "name": "w1t2 pane2", "cmd": "w1t2 p2", "order": 10 },
+						{ "name": "w1t2 pane3", "cmd": "w1t2 p3 newcol", "startsNextColumn": true  },
+						{ "name": "w1t2 pane4", "cmd": "w1t2 p4"},
+						{ "name": "w1t2 pane5", "cmd": "w1t2 p5" }
+					]
+				}
+			]
+		},
+		{
+			"name": "w2",
+			"tabs": [
+				{
+					"name": "w2 t1",
+					"panes": [
+						{ "name": "w2 p1", "cmd": "w2 p1", "order": 90 },
+						{ "name": "w2 p2", "cmd": "w2 p2 new row", "startsNextRow": true },
+						{ "name": "w2 p3", "cmd": "w2 p3 new row", "startsNextRow": true },
+						{ "name": "w2 p4", "cmd": "w2 p4", "priority": 9 }
+					]
+				}
+			]
+		}
+	]
+}
