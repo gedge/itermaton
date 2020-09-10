@@ -1,7 +1,7 @@
 {
-	"profile": "Tabbable",
-	"debug": "top",
-	"start_command": "make debug",
+	"profile": "itermaton",
+	"debug": true,
+	"start_command": "echo hello world",
 	"windows": [
 		{
 			"name": "w1",
@@ -30,16 +30,14 @@
 		},
 		{
 			"name": "w2",
-			"debug": "w2d",
 			"tabs": [
 				{
 					"name": "w2 t1",
-					"debug": "w2t1d",
 					"panes": [
 						{ "name": "w2 p1", "start_command": "w2 p1", "priority": 40 },
 						{ "name": "w2 p2", "start_command": "w2 p2 new row", "startsNextRow": true },
 						{ "name": "w2 p3", "start_command": "w2 p3 new row", "startsNextRow": true },
-						{ "name": "w2 p4", "start_command": "w2 p4", "debug": "w2t1p4d" }
+						{ "name": "w2 p4", "start_command": "w2 p4" }
 					]
 				}
 			]

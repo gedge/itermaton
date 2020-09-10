@@ -10,4 +10,4 @@ restart:
 	osascript -l JavaScript $(LIB) --restart $(EG)
 
 edit:
-	$(VISUAL) Makefile lib/*.js examples/*.json
+	$(VISUAL) *.md Makefile lib/*.js examples/*.json
