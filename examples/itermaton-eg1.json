@@ -1,6 +1,8 @@
 {
 	"profile": "itermaton",
 	"debug": true,
+	"init_commands": [ "export ITERMATON_INIT_SOME_VAR=/tmp" ],
+	"late_init_commands": [ "cd $ITERMATON_INIT_SOME_VAR" ],
 	"start_command": "echo hello world",
 	"windows": [
 		{
@@ -10,7 +12,7 @@
 					"name": "w1 t1",
 					"panes": [
 						{ "name": "w1t1 pane1", "start_command": "w1t1 p1" },
-						{ "name": "w1t1 pane2", "start_command": "w1t1 p2" },
+						{ "name": "w1t1 pane2", "late_init_commands": ["cd -"], "start_command": "w1t1 p2" },
 						{ "name": "w1t1 pane3", "start_command": "w1t1 p3" },
 						{ "name": "w1t1 pane4", "start_command": "w1t1 p4 newrow", "startsNextRow": true },
 						{ "name": "w1t1 pane5", "start_command": "w1t1 p5" }

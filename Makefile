@@ -6,8 +6,8 @@ LIB?=lib/itermaton.js
 all:
 	osascript -l JavaScript $(LIB) $(EG)
 
-restart:
-	osascript -l JavaScript $(LIB) --restart $(EG)
+restart stop close:
+	osascript -l JavaScript $(LIB) --$@ $(EG)
 
 edit:
 	$(VISUAL) *.md Makefile lib/*.js examples/*.json
