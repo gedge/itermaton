@@ -31,4 +31,12 @@ The `Makefile` in this repo contains a command to run itermaton with the supplie
 
   `$ make`
 
-This should open two windows, with some tabs, each with several panes in them. Then it should "start the apps" in each (though `debug` is on, in the sample config file, so it will merely `echo` some info in each pane).
+This should open two windows, each with 1 or 2 tabs, and the tabs with several panes in them.
+Then it should "start the apps" in each (though `debug` is on, in the sample config file, so it will merely `echo` some info in each pane instead).
+
+To stop the processs in - and then close - the windows:
+
+  `$ make stop`
+  `$ make close`
+
+(the stop should have negligible effect, since the example doesn't have long-running processes)

@@ -3,7 +3,7 @@ SHELL=bash
 EG?=examples/itermaton-eg1.json
 LIB?=lib/itermaton.js
 
-all:
+all start:
 	osascript -l JavaScript $(LIB) $(EG)
 
 restart stop close:
